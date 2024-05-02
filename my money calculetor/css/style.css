@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* height: 100vh; */
+    background-color: rgb(52, 95, 133);
+}
+
+/* header is start here ----------- */
+.header {
+    margin: 15px 0 5px 0;
+}
+
+.header-text {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px -1px rgb(0 0 0 / 60%);
+}
+
+.icon {
+    color: rgb(197, 163, 118);
+}
+
+/* main -section is start here ---------- */
+.main-section {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* image section is start ----------- */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    width: 480px;
+    border-radius: 6px;
+    opacity: .9;
+    transition: .5s;
+}
+
+.img:hover {
+    opacity: 1;
+    transform: scale(1.01);
+}
+
+/* calculetor-container is start here ---------- */
+.calculetor-container {
+    background-color: rgb(30, 58, 82);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 77px;
+    border-radius: 6px;
+    transition: .5s;
+}
+
+.calculetor-container:hover {
+    transform: scale(1.01);
+}
+
+/* .income-section */
+.income-text,
+.Expenses-text {
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(237, 240, 248);
+    letter-spacing: 1.5px;
+}
+
+.text-and-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 5px 0;
+}
+
+.calculet-btn {
+    font-size: 1.03rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(63, 63, 151);
+    border: none;
+    border-radius: 3px;
+    padding: 10px 14px;
+    margin: 3% 45%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.calculet-btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(34, 34, 143);
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    margin: 5px 0;
+    background-color: rgb(43, 101, 226);
+    border: none;
+}
+
+.input-field {
+    padding: 6px 6px;
+    font-size: 15px;
+    color: rgb(47, 8, 83);
+    border: 1px solid white;
+}
+
+.field-text {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(206, 203, 209);
+    letter-spacing: 1px;
+}
+
+/* amount-section is start --------- */
+.amount-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.amount-input-btn {
+    display: flex;
+    gap: 11px;
+}
+
+.amount-text {
+    color: rgb(236, 233, 240);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .7px;
+}
+
+.amount-input {
+    width: 88px;
+    height: 32px;
+    padding: 0px 6px;
+    font-size: 14px;
+    color: rgb(47, 8, 83);
+}
+
+.save {
+    align-self: center;
+}
+
+.amount-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(15 151 80);
+    border: none;
+    border-radius: 3px;
+    padding: 4px 13px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.amount-btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(13, 134, 74);
+}
+
+.money {
+    color: rgb(102, 214, 50);
+    font-size: 18px;
+}
+
+/* footer is start here ----------- */
+.footer-p {
+    text-align: center;
+    color: rgb(236, 233, 240);
+    font-size: .7rem;
+    letter-spacing: 4px;
+    opacity: .6;
+    line-height: 20px;
+}
+
+/* responsive  */
+@media screen and (max-width: 900px) {
+
+    .main-section {
+        justify-content: center;
+        /* padding: 3vw; */
+    }
+
+    .img {
+        display: none;
+    }
+
+    .calculetor-container {
+        padding: 7vw;
+
+    }
+
+    .calculetor-container:hover {
+        transform: none;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+    }
+
+}

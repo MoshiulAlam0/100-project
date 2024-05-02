@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monney Master..!!!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!------------------------ header start ------------------- -->
+    <header class="header">
+        <H2 class="header-text">MY CALCULET MONNEY MASTER <i class="fa-solid fa-sack-dollar icon"></i></H2>
+    </header>
+    <!-- -------------main section is start here ------------------------ -->
+    <main class="main-section">
+        <section class="image-container">
+            <img class="img" src="img/4092569.jpg" alt="">
+        </section>
+        <section class="calculetor-container">
+            <div class="calculetor-section">
+                <h2 class="income-text">Income</h2>
+                <div class="text-and-field">
+                    <p class="field-text">Income:</p>
+                    <input id="income-field" type="text" class="input-field">
+                </div>
+                <h2 class="Expenses-text">Expenses</h2>
+                <div class="text-and-field">
+                    <p class="field-text">Food:</p>
+                    <input id="food-field" type="text" class="input-field">
+                </div>
+                <div class="text-and-field">
+                    <p class="field-text">Rent:</p>
+                    <input id="rent-field" type="text" class="input-field">
+                </div>
+                <div class="text-and-field">
+                    <p class="field-text">Clothes:</p>
+                    <input id="clothes-field" type="text" class="input-field">
+                </div>
+                <button id="calculet-btn" class="calculet-btn">Calculet</button>
+            </div>
+            <hr>
+            <div class="amount-section">
+                <h2 class="amount-text">Total Expenses: $ <span id="total-expenses-amount" class="money">00</span></h2>
+                <p class="amount-text">Balance: $ <span id="balance-amount" class="money">00</span></p>
+                <div class="amount-input-btn">
+                    <p id="save-p" class="amount-text save">Save</p>
+                    <input id="saving-field" type="text" value="0" class="amount-input">
+                    <p class="amount-text save">%</p>
+                    <button id="save-btn" class="amount-btn">Save</button>
+                </div>
+                <p class="amount-text">Saving Amount: $ <span id="saving-amount" class="money">00</span></p>
+                <p class="amount-text">Remaining Balance: $ <span id="remaining-balance" class="money">00</span></p>
+            </div>
+        </section>
+    </main>
+    <!----------------- footer section is start here ------------ -->
+    <footer class="footer">
+        <p class="footer-p">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="footer-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, velit.</p>
+    </footer>
+
+    <!-- script are here --- -->
+    <script src="js/laibary.js"></script>
+    <script src="calculet.js"></script>
+    
+</body>
+
+</html>

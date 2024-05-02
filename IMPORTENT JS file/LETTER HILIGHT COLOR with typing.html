@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heiliigt{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <input id="field" type="text">
+    <p id="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus possimus quo magnam libero ipsa temporibus vitae ex nemo tempore! Dignissimos itaque consectetur natus animi repellendus hic ipsam explicabo dolorem.</p>
+    <script>
+        document.getElementById('field').addEventListener('keyup', function(e){
+            const value = e.target.value;
+            const ex = new RegExp(value, 'gi');
+            const p = document.getElementById('p');
+            const pText = p.textContent;
+            const repleace = pText.replace(ex, char => `<span id="heiliigt">${char}</span>`);
+           p.innerHTML = repleace;
+
+        })
+    </script>
+</body>
+</html>

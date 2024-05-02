@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: steelblue;
+}
+.head-h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 22px 0;
+    color: rgb(255, 255, 255);
+}
+.head-h1 span{
+    color: black;
+}
+ /* calculetion section  */
+ .calculetion-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60vw;
+    margin: auto;
+    background-color: rgba(204, 202, 202, 0.733);
+    border-radius: 6px;
+    padding: 20px;
+    gap: 10px;
+ }
+ .phone-div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 12px 16px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px -2px;
+ }
+ .img-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+ }
+ .img-container img{
+    width: 60px;
+    aspect-ratio: 1/ 1.5;
+    font-size: 2vw;
+ }
+ .price-container{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+ }
+ .quntity{
+    display: flex;
+    align-items: center;
+ }
+ .quntity input{
+   width: 4vw;
+   margin: .6vw;
+ 
+ }
+ .quntity input::-webkit-outer-spin-button,
+ .quntity input::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+ }
+ .quntity i{
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+ }
+ .quntity i:hover{
+    color: blue;
+ }
+ .price{
+    display: flex;
+    gap: 1vw;
+    display: flex;
+    align-items: center;
+ }
+ .price p{
+    font-weight: bold;
+ }
+ .price i{
+    font-size: 2rem;
+    color: rgb(3, 3, 3);
+    transition: all ease .3s;
+    cursor: pointer;
+ }
+ .price i:hover{
+    color: red;
+ }
+ .buy-btn{
+    padding: 8px 12px;
+    background-color: rgb(8, 117, 241);
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    transition: all ease .3s;
+ }
+ .buy-btn:hover{
+    background-color: #33b90a;
+ }
+.price-amount{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    font-weight: bold;
+}
+  /* responsive---------- */
+  @media screen and (max-width: 900px) {
+    .common{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        position: relative;
+     }
+    .price i{
+        position: absolute;
+        top: 2vw;
+        right: 2vw;
+    }
+    .img-container{
+      width: 100%;
+    }
+  }
+
+

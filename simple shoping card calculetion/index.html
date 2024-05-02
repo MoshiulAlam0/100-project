@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My shopinc card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="main">
+
+        <head>
+            <h1 class="head-h1">My shoping <span>card</span></h1>
+        </head>
+        <section class="calculetion-body">
+            <div class="phone-div common">
+                <div class="img-container">
+                    <img src="Apple-Iphone-15-Black-PNG.png" alt="">
+                    <h3>Iphone 14 Pro</h3>
+                </div>
+                <div class="price-container">
+                    <div class="quntity">
+                        <i id="increaseBtn1" class="fa-solid fa-plus"></i>
+                        <input type="number" value="1" id="input-phone">
+                        <i id="dicreaseBtn1" class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="price">
+                        <p>$<span class="amaunt" id="phone-price">100</span></p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="phone-div common">
+                <div class="img-container">
+                    <img src="Apple-Iphone-15-Black-PNG.png" alt="">
+                    <h3>Iphone cover 14 Pro</h3>
+                </div>
+                <div class="price-container">
+                    <div class="quntity">
+                        <i id="increaseBtn2" class="fa-solid fa-plus"></i>
+                        <input type="number" value="1" id="input-cover">
+                        <i id="dicreaseBtn2" class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="price">
+                        <p>$<span class="amaunt" id="cover-price">100</span></p>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="phone-div">
+                <div class="price-amount">
+                    <p>Subtotal:</p>
+                    <p>Tax <span id="tax-parsent">5</span>%:</p>
+                    <p>Total:</p>
+                </div>
+                <div class="price-amount">
+                    <p id="subtotal">00</p>
+                    <p id="tax">00</p>
+                    <p id="total">00</p>
+                </div>
+            </div>
+            <button class="buy-btn">Buy</button>
+        </section>
+    </main>
+
+
+    <script src="js/quantity.js"></script>
+
+</body>
+
+</html>

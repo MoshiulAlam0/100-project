@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main{
+    overflow: hidden;
+}
+/* for page1  */
+.page1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* nav  */
+.nav{
+    position: relative;
+}
+.nav h1{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-weight: bold;
+    color: #fcfcfc;
+    letter-spacing: 3px;
+}
+.nav h1 span{
+    letter-spacing: 0px;
+    color: #1d4e66;
+}
+.nav ul{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    list-style: none;
+}
+.nav ul li {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 7px 10px;
+    color: #ffffffdc;
+    transition: .3s;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.action,.nav ul li:hover {
+    border-radius: 4px;
+    background-color: #1d4e66;
+    color: #ffffffdc;
+
+}
+/* page1-text-containt */
+.page1-containt{
+display: flex;
+justify-content: space-between;
+/* background-color: #1d4e66; */
+width: 100%;
+height: 80%;
+position: relative;
+}
+.page1-text-containt{
+    margin: 10vh;
+    transform: translateX(5vw);
+    align-self: self-start;
+    width: 40vmax;
+    height: 20vh;
+    color: #f7f7f7;
+    text-transform: uppercase;
+}
+.page1-text-containt h1{
+    font-size: 5rem;
+}
+.page1-text-containt h3{
+    font-size: 2rem;
+}
+.page1-text-containt p{
+    margin: 16px 0;
+    font-size: .8rem;
+}
+.page1-text-containt button{
+    padding: 8px 12px;
+    background-color: #1d4e66;
+    border: none;
+    border-radius: 4px;
+    color: #f7f7f7;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.page1-img-con{
+    align-self: flex-end;
+    width: auto;
+    height: 20vh;
+    /* background-color: blue; */
+    gap: 1vw;
+    display: flex;
+    gap: 20px;
+    transform: translateX(10vw);
+}
+.img-div{
+    border-radius: 10px;
+    width: 180px;
+
+}
+
+.img-div span{
+    opacity: 0;
+}
+.img-div{
+    background: url(../img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: .3s;
+    cursor: pointer;
+}
+.img-div:hover{
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(238, 217, 190);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.loder-container{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3vw;
+}
+.item{
+    width: .4vw;
+    height: 6vh;
+    background-color: rgb(255, 0, 0);
+    animation-name: loder;
+    animation-duration: .6s;
+    /* animation-timing-function: linear; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#item1{animation-delay: 0s;}
+#item2{animation-delay: .2s;}
+#item3{animation-delay: .3s;}
+#item4{animation-delay: .4s;}
+#item5{animation-delay: .5s;}
+#item6{animation-delay: .6s;}
+/* #item7{animation-delay: .7s;} */
+
+
+@keyframes loder {
+    form{
+        height:65vw;
+    }
+    to{
+        height: .5vw;
+    }
+           
+}

@@ -1,0 +1,668 @@
+/* my font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Poppins", sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    background-color: #f8f7ef;
+}
+
+/*      == =========code for the wraper -======================= */
+.wraper {
+    overflow: hidden;
+    position: relative;
+
+}
+
+/* ======================== code for the nav ====================== */
+nav {
+    /* width: 100%; */
+    padding: 1vw 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #ffff;
+}
+
+.nav-right-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    color: #ffff;
+    text-transform: uppercase;
+
+}
+
+.nav-right-con a {
+    margin-left: 5vw;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffff;
+    transform: s;
+}
+
+.nav-right-con p {
+    cursor: pointer;
+}
+
+/* -======================= code for the page 1 ================= */
+.page1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    /* background-color: slateblue; */
+}
+
+.page1-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    line-height: 5.1vh;
+    padding: 16vh 0;
+    flex-wrap: wrap;
+}
+
+.page1-head h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+
+.page1-head p {
+    line-height: 5.6vh;
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.page1-head p span {
+    line-height: 4.7vh;
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#big-ai {
+    font-size: 6rem;
+    text-transform: capitalize;
+}
+
+#think {
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+
+#we {
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+#ai {
+    font-size: 3.6rem;
+}
+
+/* #x{
+    
+    font-weight: 600; 
+} */
+
+.filter-btn {}
+
+/* page 1 body  */
+.page1-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92%;
+    gap: 1vw;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.card {
+    width: 40vmin;
+    height: 70w;
+    padding: 2vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 12px -10px;
+}
+
+.card-img img {
+    width: 40vmin;
+    aspect-ratio: 1/.8;
+}
+
+.card-text2 {
+    position: relative;
+}
+
+.more-btn {
+    position: absolute;
+    right: 8px;
+    bottom: 4px;
+    font-size: .7rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.more-btn:hover {
+    transform: scale(1.01);
+    text-decoration: none;
+    color: blue;
+}
+
+.card-text1 ol li,
+.card-text2 p {
+    /* line-height: 2.5vh; */
+    list-style: none;
+    font-size: .6rem;
+    color: #474747;
+}
+
+
+.card-text1 h3 {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.card-line {
+    margin: 1.6vh 0 1.6vh 2vh;
+    width: 35vmin;
+    height: 1px;
+    background-color: #4747472f;
+}
+
+.see-more-btn {
+    margin: 7vh 0;
+}
+
+.common-btn {
+    /* transform: rotateX(180deg); */
+    padding: 1.4vh 3vh;
+    border-radius: 6px;
+    border: none;
+    background-color: #000000;
+    color: #ffffffec;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 4vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 77;
+    transition: .3s;
+    border: 1px solid #000000;
+}
+
+.common-btn::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    transition: .3s;
+}
+
+.common-btn:hover {
+    border: 1px solid #000000;
+    color: #000000;
+    font-weight: 500;
+}
+
+.common-btn:hover::after {
+    top: 0%;
+    border-radius: 0%;
+
+}
+
+/* =================  moving logo =================== */
+.moving-logo {
+    margin: 15vh 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+}
+
+.moving-logo::-webkit-scrollbar {
+    display: none;
+}
+
+.moving-img-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    animation: moving 9s linear infinite;
+}
+
+.moving-img-con img {
+    width: 25vmin;
+    opacity: .8;
+}
+
+
+@keyframes moving {
+    to {
+        transform: translateX(-100%);
+
+    }
+
+}
+
+/* =======================code for the footer ======================= */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 80vh;
+    background-color: #000000;
+    color: #ffff;
+}
+
+.footer-ai-hub-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+#footer-ai{
+    color: #ffffff;
+    font-size: 5rem;
+    opacity: 1;
+    font-weight: bold;
+}
+#footer-to{
+    color: #ffffff;
+    font-size: 5rem;
+    opacity: 1;
+    font-weight: bold;
+}
+#footer-life{
+    color: #ffffff;
+    font-size: 5rem;
+    opacity: 1;
+    font-weight: bold;
+}
+#footer-i-of-ai {
+    text-transform: lowercase;
+    font-size: 8rem;
+}
+
+.footer-text-con {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    flex-direction: column;
+    opacity: .7;
+    line-height: 9vh;
+}
+
+.footer-text-con div {
+    gap: .5vw;
+    display: flex;
+}
+
+.footer-frist-text {
+    opacity: 1;
+}
+
+
+
+/* ==================== code for the modal ================== */
+.modal-con {
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 78vmin;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2;
+    padding: 4vh;
+    border-radius: 20px;
+    box-shadow: 0 0 12px -9px;
+}
+
+.modal-div {
+    display: flex;
+    /* background-color: white; */
+    flex-direction: column;
+    height: 70vmin;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 1vh;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+}
+
+/* left  */
+.modal-left-con {
+    width: 52%;
+    justify-content: space-evenly;
+
+}
+
+.modal-left-con>h2 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    line-height: 1.6rem;
+}
+
+.modal-left-middel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2vmin;
+
+}
+
+.modal-left-middel div {
+    width: 30vmin;
+    aspect-ratio: 1/.7;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 2.9vh;
+    font-size: 1.3vw;
+
+}
+
+.basic {
+    color: #d3f516;
+}
+
+.pro {
+    color: #f5ae16;
+}
+
+.compromise {
+    color: #82f516;
+}
+
+.modal-left-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vmin;
+}
+
+.modal-left-bottom h2 {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.modal-left-bottom li {
+    font-size: .9rem;
+    text-transform: capitalize;
+}
+
+/* right  */
+.modal-right-con {
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.modal-right-con p {
+    line-height: 3.5vh;
+    font-size: 1rem;
+
+}
+
+.modal-right-con>div {
+    position: relative;
+}
+
+.modal-right-con img {
+    width: 27vw;
+    aspect-ratio: 1/.8;
+}
+
+#accoreacy {
+    position: absolute;
+    text-decoration: underline;
+    top: 2px;
+    right: 2px;
+    border-radius: 4px;
+    border: none;
+    color: #000000a9;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+#accoreacy:hover {
+
+    color: rgb(0, 0, 0);
+
+
+}
+
+.close-btn {
+
+    position: absolute;
+    top: -2%;
+    right: -1%;
+    padding: 1.1vmin;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.close-btn:hover {
+    background-color: rgb(221, 38, 38);
+
+}
+
+
+/* -================== code for error img and h1 ============= */
+.error-div {
+    animation: img 2.8s linear infinite alternate-reverse;
+    transition: .3s;
+
+}
+
+.error-img {
+    width: 30vw;
+    aspect-ratio: 1/.7;
+    padding: 6vh 0;
+    /* animation: img 2.8s linear infinite alternate-reverse; */
+}
+
+.not-found {
+    text-align: center;
+    text-transform: capitalize;
+    color: #87dced;
+    font-size: 2.5rem;
+    opacity: .6;
+}
+
+@keyframes img {
+    to {
+        transform: translateY(20px);
+    }
+
+}
+
+
+
+/* =================== code for spinar btn ============= */
+.spinar {
+    display: none;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #000000;
+    border-bottom: 10px solid #ad0707;
+    border-radius: 50%;
+    width: 9vh;
+    aspect-ratio: 1/1;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ========================= code for responsive ============= */
+@media (max-width: 1150px) {
+    .modal-con {
+        width: 93vw;
+    }
+    .close-btn {
+        top: 1%;
+        right: 6%;
+        font-size: 1.1rem;
+        padding: 1.6vmin;
+    }
+}
+
+@media (max-width: 900px) {
+    .modal-left-middel div {
+        line-height: normal;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .modal-con {
+        height: 99vmin;
+    }
+    .modal-left-con {
+        justify-content: space-evenly;
+    }
+    .modal-div {
+        height: 101vmin;
+       
+    }
+}
+
+
+@media (max-width: 500px) {
+    .card {
+        width: 70vmin;
+    }
+
+    .card-img img {
+        width: 70vmin;
+    }
+
+    .card h3 {
+        padding-bottom: 2vmin;
+    }
+
+    .card-text1 ol li,
+    .card-text2 p {
+        font-size: 4vmin;
+    }
+    .modal-con{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .modal-div{
+        width: 100%;
+        padding: 10vw;
+    }
+    .modal-left-con>h2 {
+        font-size: .9rem;
+        margin:  0 2vw;
+    }
+    .modal-left-bottom h2 {
+        font-size: .9rem;
+        text-transform: capitalize;
+    }
+    .modal-left-bottom li {
+        font-size: 0.7rem;
+        list-style: none;
+    }
+    .modal-right-con img {
+        width: 67%;
+        aspect-ratio: 1 / .7;
+    }
+    #accoreacy {
+        right: 18%;
+    }
+    .close-btn {
+        top: 5%;
+        right: 12%;
+    
+    }.modal-right-con p {
+        line-height: 2.5vh;
+        margin: 0 1px;
+    }
+
+
+}
+
+@media (max-width: 340px) {
+    .card {
+        width: 70vmin;
+    }
+
+    .card-img img {
+        width: 70vmin;
+    }
+
+    .card h3 {
+        font-size: 7vmin;
+        padding-bottom: 2vmin;
+    }
+
+    .card-text1 ol li,
+    .card-text2 p {
+        font-size: 4.4vmin;
+    }
+
+
+}

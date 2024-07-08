@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stop-watch-con">
+        <div class="time-con">
+            <p><span id="minite" class="minite">00</span>:<span id="sec" class="sec">00</span>:<span id="mili" class="mili">00</span></p>
+        </div>
+        <div class="controlar-con">
+            <button id="lamp">lamp</button>
+            <button id="start">start</button>
+            <button id="reset">reset</button>
+        </div>
+    </div> 
+    <div class="stop-watch-history">
+       <div class="lamp-con">
+         <!-- <div class="history-info">
+            <p id="lamp-info">lamp:<span>1</span></p>
+            <p><span id="l-minite" class="minite">00</span>:<span id="l-sec" class="sec">00</span>:<span id="l-mili" class="mili">00</span></p>
+        </div> -->
+       </div>
+        <p id="no-history">no record</p>
+        <a id="clean">clean</a>
+    </div> 
+
+    <script src="stop.js"></script>
+</body>
+</html>

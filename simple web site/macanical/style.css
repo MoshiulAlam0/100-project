@@ -10,11 +10,16 @@
     font-family: a;
     font-weight: normal;
 }
+span{
+    display: inline-block;
+    overflow: hidden;
+}
 
 main {
     background-color: #0a3bcf;
     position: relative;
     z-index: 9999;
+    overflow-x:  hidden;
 }
 
 .page1 {
@@ -40,11 +45,10 @@ nav {
     justify-content: center;
     gap: 2vw;
 }
-
-.nav-right>i {
-    font-size: 1.5rem;
+.nav-right>p {
+    padding: .2vw 1.5vw;
     border: 1px solid #4a4aff;
-    padding: .6vw 1.5vw;
+    font-size: 1.5rem;
     border-radius: 30px;
     transition: .3s;
     cursor: pointer;
@@ -52,31 +56,35 @@ nav {
     top: 2.3vw;
     right: 3vw;
     z-index: 6666;
+    
 }
 
-.nav-right>i:hover {
-    border: 1px solid #ffffffc2;
+.nav-right>p>i {
+    display: inline-block;
+    transition: .3s;
+}
+
+.nav-right>p:hover {
+    border: 1px solid #c7c7c7c2;
 }
 
 .nav-right>button {
     width: 30vmin;
-    background-color: transparent;
     padding: 1.5vw 1.1vw;
     border-radius: 50px;
     border: 1px solid #4a4aff;
     margin-right: 6vw;
     cursor: pointer;
-}
-/* .common-btn{
     position: relative;
     overflow: hidden;
+    /* z-index: -1; */
     transition: .3s;
-    z-index: -1;
     display: flex;
     align-items: center;
     justify-content: center;
-} */
-/* .nav-right>button a {
+    background-color: transparent;
+}
+.nav-right>button a {
     position: absolute;
     text-transform: capitalize;
     color: white;
@@ -84,23 +92,23 @@ nav {
     text-decoration: none;
     transition: .3s;
     z-index: 1;
-} */
+}
 
-/* .btn-a2 {
+.btn-a2 {
     opacity: 0;
     display: inline-block;
     transform: translateY(-30px);
-} */
+}
 
-/* .nav-right>button:hover {
+.nav-right>button:hover {
     border: 1px solid #ffffffc2;
-} */
+}
 
-/* .nav-right>button:hover>.btn-a1 {
+.nav-right>button:hover>.btn-a1 {
     transform: translateY(30px);
     opacity: 0;
-} */
-/* 
+}
+
 .nav-right>button:hover>.btn-a2 {
     opacity: 1;
     transform: translateY(0px);
@@ -108,18 +116,18 @@ nav {
 
 .nav-right>button:hover>.btn-black {
     top: 0;
-} */
+}
 
-/* .btn-black {
+.btn-black {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: black;
-    z-index: -1;
+    z-index: 1;
     transition: .3s;
-} */
+}
 
 
 .page1-bottom {
@@ -129,19 +137,23 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
+    
 }
 
 .page1-bottom>h1 {
     font-size: 5.9vw;
     font-weight: 400;
     line-height: 1;
+    overflow: hidden;
 }
 
 .page1-bottom>p {
     font-size: 1.4vw;
     line-height: 1.5;
-
+    text-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
 }
 
 .page1>video {
@@ -162,7 +174,7 @@ nav {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.966);
     backdrop-filter: blur(3px);
-    right: 0;
+    right: -100%;
     top: 0;
     display: block;
     z-index: 666;
@@ -174,7 +186,7 @@ nav {
     padding: 2.5vw;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    display: none;
+    transition: .8s;
 }
 
 .menu-item {
@@ -204,6 +216,7 @@ nav {
 .social-icon>i {
     transition: .3s;
     cursor: pointer;
+    display: inline-block;
 
 }
 
@@ -296,15 +309,18 @@ nav {
 .page2>p {
     font-size: 1.2rem;
     margin-left: 8vw;
-    color: #bababa3d;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    text-wrap: nowrap;
 }
 
 .page2>h1 {
     margin-top: 1.7vw;
-    font-size: 3.9vw;
+    font-size: 3.5vw;
     text-transform: capitalize;
     line-height: 1.2;
     margin-left: 8vw;
-    width: 87%;
+    width: 80%;
     color: #bababa3d;
 }

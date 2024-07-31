@@ -1,0 +1,884 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main{
+    overflow-x: hidden;
+}
+
+/* ================= page 1 ================= */
+.page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+#menu-icon{
+    position: absolute;
+    top: 32px;
+    right: 40px;
+    z-index: 9999;
+}
+ /*--------- nav  */
+nav{
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    padding: 3vw 7vw 3vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+
+}
+.nav-centar{
+    display: flex;
+    gap: 3vw;
+    transition: .8s;
+    transform: translateX(130%);
+}
+.nav-item-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1vw;
+}
+.nav-item-con>a{
+    color: #f8f8f8;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .3s;
+}
+.nav-item-con>a:hover{
+    color: #fcc688;
+}
+.icon{
+    cursor: pointer;
+    transition: .3s;
+}
+.icon:hover{
+    transform: scale(1.1);
+}
+
+/* ----------------- center part  */
+.page1-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.page1-center-left{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+.page1-center-right{
+    width: 70%;
+    height: 100%;
+    background-color: #264d59;
+}
+.page1-center-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    display: flex;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(-100%);
+    transition: .4s;
+}
+#frist-content{
+    transform: translateX(0%);
+}
+.cycle-img{
+    position: relative;
+    display: flex;
+    align-self: flex-end;
+}
+
+.best{
+    position: absolute;
+    top: -22%;
+    left: 50%;
+    background-color: #fcc688;
+    width: 15vmin;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #264d59;
+    font-size: 3vmin;
+}
+.page1-center-content img{
+    width: 90vh;
+    align-self: flex-end;
+    margin-bottom: 8px;
+    rotate: 4deg;
+    position: relative;
+}
+.page1-center-content .text-content{
+    margin-top: 17vh;
+    align-self:self-start;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3vw;
+    align-items: self-start;
+    color: #ffffff;
+}
+.page1-center-content .text-content>h1{
+    font-size: 8vmin;
+    text-transform: capitalize;
+}
+.page1-center-content .text-content>p{
+    font-size: 2.5vmin;
+    
+}
+.common-btn{
+   padding: 1vw 3vw;
+   background-color: #fcc688;
+   border: none;
+   text-transform: capitalize;
+   font-size: 2.6vmin;
+   font-weight: 400;
+   cursor: pointer;
+   transition: .3s;
+}
+.common-btn:hover{
+   background-color: #000000;
+   color: #ffffffff;
+}
+
+
+.slaider-btn-con{
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    display: flex;
+    gap: 2vw;
+    z-index: 10;
+}
+.slaider-btn{
+    width: 13vmin;
+    aspect-ratio: 1/.8;
+    background-color: #fcc688;
+    cursor: pointer;
+}
+/* ------------ page 1 bottom  */
+.page1-bottom{
+    width: 160%;
+    height: 70vh;
+    background-color: white;
+    rotate: -10deg;
+    position: absolute;
+    right: -20%;
+    top: 82%;
+}
+
+/* ================== our cycle =================== */
+.our-cycle{
+    width: 100%;
+    height: 30vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    text-transform: capitalize;
+}
+.our-cycle>h2{
+    font-size: 6.4vmin;
+}
+.our-cycle>p{
+    font-size: 2.5vmin;
+    padding:0 30px ;
+    text-align: center;
+}
+
+/* =========================== page 2 =================== */
+.page2, .page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.callection-con{
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    /* background-color: red; */
+    gap: 3vw;
+    padding: 10px;
+}
+.callection-right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+.cycle-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 5vmin;
+    text-transform: capitalize;
+}
+.cycle-text>div{
+    width: 30vmin;
+    height: 1.5px;
+    background-color: #bababa;
+    font-weight: lighter;
+}
+.buy-btn-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buy-btn-con>button{
+    padding: 1.1vw 2.5vw;
+    font-size: 3vmin;
+    text-transform: capitalize;
+    background-color: #264d59;
+    color: white;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+.buy-btn-con>button:hover{
+    background-color: #fcc688;
+}
+.buy-btn-con>p{
+    display: flex;
+    gap: 5px;
+    font-size: 3vmin;
+}
+.buy-btn-con>p>span:nth-child(1){
+    color: #000000;
+}
+.buy-btn-con>p>span:nth-child(2){
+    color: #fcc688;
+}
+.buy-btn-con>p>span:nth-child(3){
+    color: #264d59;
+}
+.callection-left{
+    position: relative;
+}
+.callection-left::after {
+    content: "";
+    width: 112%;
+    height: 123%;
+    background-color: #fcc688;
+    position: absolute;
+    bottom: 0px;
+    left: -50px;
+    z-index: -2;
+    clip-path: polygon(0 0, 75% 8%, 75% 80%, 0% 100%);
+}
+.callection-left>.img>img{
+    width: 60vmin;
+}
+.number{
+    position: absolute;
+    top: -12%;
+    right: 23%;
+    width: 8vmin;
+    aspect-ratio: 1/1;
+    background-color: #264d59;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    font-size: 4vmin;
+}
+
+
+/* =========================page 3============================= */
+#page3-cycle{
+    order: 2;
+    margin-left: 6vw;
+}
+#page3-cycle::after, #page4-cycle::after{
+    height: 150%;
+    top: -32%;
+    
+}
+#page3-cycle>.number, #page4-cycle>.number{
+top: -21%;
+    
+}
+#read-more{
+    display: flex;
+    margin: auto;
+    margin-bottom: 4vh;
+}
+/* ==================== page 5 ================== */
+.page5{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    height: 77vh;
+    background: url(../img/about-bg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.page5-img img{
+    width: 100%;
+    z-index: 33;
+}
+.page5-img{
+    width: 65vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-30%);
+}
+.page5-img::after{
+    content: "";
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    top: -10%;
+    left: -20%;
+    background-color: #ffff;
+    z-index: 20;
+    clip-path: polygon(0 0px, 80% 3%, 80% 78%, 0% 100%);
+    box-shadow: 0px 8px 7px 3px rgba(0, 0, 0, 0.31);
+}
+.page5-text{
+    text-align: center;
+    padding: 30px 4px 0 4px;
+    color: white;
+}
+.page5-text>h1{
+    font-size: 6vmin;
+    text-transform: capitalize;
+}
+.page5-text>p{
+    font-size: 2.3vmin;
+    width: 78%;
+    margin: auto;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+
+
+
+/*===================================== page 6============================== */
+
+.page6{
+    width: 100%;
+    height: 100vmin;
+    /* background-color: blue; */
+    margin: 30vh 0 20vh 0;
+    padding: 3vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.page6-card-con .page6-card-box-con>h1{
+    padding-top: 20px;
+    font-size: 6vmin;
+    text-transform: capitalize;
+    text-align: center;
+}
+.page6-card-con{
+    width: 80%;
+    margin: auto;
+    height: 90%;
+    border: 1px solid #bbbb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    /* background-color: red; */
+    position: relative;
+}
+.page6-card-box-con{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 200%;
+    transition: .3s;
+}
+#frist-card-box-con{
+    left: 0%;
+}
+.card-box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    gap: 1vmin;
+    padding: 2vmin;
+    box-shadow: 0 1px 10px -5px;
+}
+.card-box .card-box-text{
+    margin-top: 30px;
+    width:70%;
+}
+.card-box-text>p{
+    padding: 3vmin 0;
+}
+.page6-slaider-btn-con{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 1vmin;
+}
+.page6-slaider-btn-con>div{
+    width: 10vmin;
+    aspect-ratio: 1/1;
+    background-color: #fcc688;
+}
+
+/* ================================== page 7 ================================= */
+.page7{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #264d59;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 0;
+}
+.page7-header{
+    width: 70%;
+    text-align: center;
+    color: #fff;
+}
+.page7-header>h1{
+    text-transform: capitalize;
+    font-size: 6vmin;
+}
+.page7-header>p{
+    font-size: 2.4vmin;
+    padding-top: 10px;
+}
+.page7-card-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    flex-wrap: wrap;
+    gap: 2vw;
+    padding: 2vmin;
+}
+.page7-card-con .card{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    width: 50vmin;
+    height: 68vmin;
+    background-color: white;
+    transition: .3s;
+}
+.page7-card-con .card:hover{
+    box-shadow: 1px 0px 9px white;
+}
+.page7-card-con .card img{
+    width: 100%;
+    aspect-ratio: 1/ .6;
+    transition: .3s;
+}
+.page7-card-con .card img:hover{
+    width: 100%;
+    aspect-ratio: 1/ .9;
+}
+.page7-card-con .img{
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1/ .6;
+}
+.card-text-con{
+    width: 90%;
+    margin: auto;
+}
+#card-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 2.7vmin;
+    font-weight: 400;
+    padding: 5px 0;
+}
+.card-text-con h4{
+    font-size: 2.8vmin;
+    text-transform: capitalize;
+
+}
+.card-text-con p{
+    padding-top: 4px;
+    font-size: 2.4vmin;
+
+}
+/* =================================== page 8 ============== */
+.page8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #264d59;
+    padding: 8vmin 0;
+}
+.field-con{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vmin;
+    color: white;
+    text-transform: capitalize;
+}
+.field-con>h2{
+    font-size: 6vmin;
+}
+.field-con>input, .field-con>textarea{
+    width: 70vmin;
+    height: 6vmin;
+    font-size: 2.8vmin;
+    padding: 4.8vmin;
+    border-radius: 20px;
+    border: none;
+}
+.field-con>input:focus, .field-con>textarea:focus{
+    outline: none ;
+}
+#textarea{
+    height: 20vmin;
+}
+#send{
+    font-size: 3.3vmin;
+    padding: 2vmin 8vmin;
+    border-radius: 15px;
+    border: none;
+    background-color: #fcc688;
+    transition: .3s;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#send:hover{
+    color: #fff;
+    background-color: #000000;
+}
+
+/* ================================= footer ====================== */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vmin;
+    width: 100%;
+    /* height: 100vh; */
+    padding: 28px 0;
+    background-color: #264d59;
+    color: white;
+}
+.footer-main{
+    display: flex;
+    gap: 4vmin;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-main>img{
+    width: 60vw;
+    aspect-ratio: 1/.6;
+}
+.footer-main .footer-text-con{
+    width: 37vw;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 10px;
+}
+.footer-text-con .text-con{
+    display: flex;
+    flex-direction: column;
+    gap: 2vmin;
+}
+.footer-text-con .text-con .text{
+    display: flex;
+    gap: 3vmin;
+}
+.meadia-icon{
+    gap: 3vmin;
+    display: flex;
+}
+.footer-text-con input{
+    width: 64vmin;
+    padding:2vmin;
+    font-size: 2.5vmin;
+    color: #292929;
+}
+#subcribe{
+    width: 33vmin;
+    font-size: 2.5vmin;
+    padding: 2vmin;
+    background-color: #fcc688;
+    border: none;
+    cursor: pointer;
+}
+#subcribe:hover{
+color: #292929;
+    background-color: #ffffff;
+}
+.footer-bottom{
+    color: #bababa;
+    opacity: .5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* code for responsive  */
+@media (max-width:1073px) {
+    #last-card{
+        width: 100vmin;
+        height: 93vmin;
+    }
+}
+@media (max-width:1000px) {
+    .content {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .page1-center-content img {
+        align-self: center;
+        width: 60vh;
+        margin-bottom: 8px;
+        rotate: 4deg;
+    }
+    .page1-center-content .text-content {
+        margin-top: 10vh;
+        align-self: center;
+        width: 60%;
+    }
+    .page1-center-left {
+        width: 30%;
+        height: 100%;
+        background-color: #264d59;
+    }
+    .page1{
+        background-color: #264d59;
+    }
+    .page1-center-content .text-content>h1 {
+        font-size: 3rem;
+    }
+    .slaider-btn-con {
+        bottom: 4%;
+        right: 5%;
+    }
+    .cycle-img{
+        align-self: center;
+    }
+    .best{
+        top: -12%;
+        left: 80%;
+    } 
+    .card-box{
+        width: 95%;
+    }
+    .card-box>.img>img{
+        width: 30vmin;
+
+    }
+    .page6-card-con{
+        width: 95%;
+    }
+}
+@media (max-width:1073px) {
+    .page7-card-con .card {
+        display: flex;
+        width: 98vmin;
+        height: 93vmin;
+    }
+    #last-card{
+        width: 98vmin;
+        height: 93vmin;
+    }
+}
+@media (max-width:930px) {
+    .page2 {
+        align-items: self-start;
+    }
+    .page{
+        height: auto;
+        padding: 60px 0;
+    }
+    .callection-con {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 55px;
+    }
+    .callection-right {
+        width: 90%;
+    }
+    #page3-cycle{
+        margin: 150px 0;
+    }
+
+}
+
+@media (max-width: 742px) {
+    footer{
+        gap: 10vmin;
+    }
+    .footer-main{
+        flex-direction: column;
+        gap: 7vmin;
+    }
+    .footer-main>img {
+        width: 93vw;
+    }
+    .footer-main .footer-text-con {
+        width: 91vw;
+    }
+    
+}
+@media (max-width: 652px) {
+    .nav-centar{
+        position: absolute;
+        right: 0;
+        top: 0;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 40vmin;
+        height: 100vh;
+        padding:  0 3vw;
+        transform: translateX(129%);
+        z-index: 9999;
+        
+    }
+    .nav-item-con{
+        flex-direction: column;
+        gap: 2.1vw;
+        justify-content: center;
+    }
+    .nav-item-con a {
+        align-self: self-start;
+        font-size: 5vmin;
+        color: black;
+    }
+    .login_search_icon{
+        flex-direction: row;
+        order: -1;
+    }
+    .callection-con {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .page6{
+        margin: 30vmin 0;
+    }
+    .footer-text-con input {
+        font-size: 3.5vmin;
+    }
+    #subcribe {
+        font-size: 3.5vmin;
+    }
+}
+
+
+@media (max-width:500px) {
+    .page5{
+        height: 100vmin;
+    }
+    .page5-img {
+        width: 65vmin;
+        bottom: -7%;
+        left: 50%;
+        transform: translate(-30%);
+    }
+    .page5-img img{
+        width: 64vmin;
+    }
+    .page5-img {
+        width: 65vmin;
+    }
+    .card-box .card-box-text{
+        margin-top: 3px;
+    }
+    .card-box-text>img{
+        width:5.2vmin;
+    }
+    .card-box-text>p{
+        font-size: 2.2vmin;
+    }
+    .card-box-text>h3{
+        font-size: 4vmin;
+    }
+}
+
+@media (max-width:430px) {
+    .content {
+        justify-content: space-around;
+    }
+    .page1-center-content img {
+        width: 97vw;
+    }
+    .best{
+        top: 2%;
+        left: 80%;
+    }
+}

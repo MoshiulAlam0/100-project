@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-    body{
+    body {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100vh;
         background-color: slateblue;
     }
-    .common-btn{
+
+    .common-btn {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -21,16 +23,33 @@
         width: 20vw;
         padding: 2vw 0;
         border-radius: 50px;
+        overflow: hidden;
     }
-    a{
+    .common-btn:hover .a1 {
+        transition: 3s;
+        top: 100%;
+        color: red;  
+    }
+    
+    a {
+        transition: 3s;
+        position: absolute;
+        color: rgb(0, 0, 0);
+        font-size: 1.1rem;
+        text-decoration: none;
+    }
 
+    .a2 {
+        top: -40%;
     }
 </style>
+
 <body>
     <button class="common-btn">
         <a class="a1" href="">book</a>
         <div class="black"></div>
         <a class="a2" href="">book</a>
-    </button >
+    </button>
 </body>
+
 </html>

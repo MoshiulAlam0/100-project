@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+main {
+    overflow-x: hidden;
+}
+/* ===================== page 1 ======================== */
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.page1-left {
+    width: 30%;
+    height: 100%;
+}
+
+.page1-right {
+    width: 70%;
+    height: 100%;
+    background-color: #264d59;
+}
+
+.page1-left img {
+    padding: 2vw;
+    width: 23vmin;
+}
+
+.page1-right nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    
+}
+
+/* ===========  nav ========== */
+nav{
+    transform: translateX(160%);
+    transition: .9s;
+}
+.nav-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-con .nav-item-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+    text-transform: capitalize;
+    margin-right: 2vw;
+    
+}
+.nav-item-con a {
+    text-decoration: none;
+    color: #d3d3d3;
+    cursor: pointer;
+    transition: .3s;
+}
+.nav-item-con a:hover{
+    text-decoration: none;
+    color: #fcc688;
+}
+.nav-item-con img{
+    cursor: pointer;
+    transition: .3s;
+}
+.nav-item-con img:hover{
+    transform: scale(1.1);
+}
+.menu-icon{
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    cursor: pointer; 
+    transition: .3s;
+    z-index: 9999;
+}
+.menu-icon:hover{
+    transform: scale(1.1);
+}
+/* ======== center ========= */
+.page1-center{
+    width:60vw;
+    position: absolute;
+    top: 38%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.page1-center .text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vw;
+    align-items: start;
+    text-transform: capitalize;
+}
+.page1-center .text-content>button{
+    padding: 1vw 2.8vw;
+    background-color: #fcc688;
+    border: none;
+    text-transform: capitalize;
+    font-size: 3vmin;  
+    transition: .3s;
+    cursor: pointer;
+}
+.page1-center .text-content>button:hover{
+    color: white;
+    background-color: #000000;
+
+}
+.text-content>h1{
+    font-size: 3rem;
+}
+.text-content>p{
+    font-size: 1rem;
+}
+.white-div{
+    position: absolute;
+    bottom: -37%;
+    right: -10%;
+    width: 100vw;
+    height: 420px;
+    background-color: white;
+    rotate: -14deg;
+}
+#cycle-img{
+    position: absolute;
+    bottom: 12px;
+    left: 6%;
+    width: 40vw;
+    /* rotate: 13deg; */
+}
+.slaider-btn{
+    position: absolute;
+    bottom: 30%;
+    right: 8%;
+    display: flex;
+    gap: 1vmin;
+}
+.slaider-btn div{
+    width: 10vmin;
+    aspect-ratio: 1/.8;
+    background-color: #fcc688;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* for responsive  */
+@media(max-width: 900px) {
+    #cycle-img{
+        width: 50vw;
+        /* rotate: 13deg; */
+    }
+
+}
+@media(max-width: 800px) {
+    .page1-right nav {
+        align-items: start;
+        justify-content: start;
+        background-color: #ffffff;
+        width: 40vmin;
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        z-index: 55;
+    }
+    .nav-con{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        font-size: 1.5rem;
+        
+    }
+    .nav-item-con{
+        flex-direction: column;
+    }
+    #nav-item-con2{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        order: -3;
+    }
+    .nav-con a{
+        color: #000000;
+    }
+    .nav-con .nav-item-con {
+        display: flex;
+        align-items: self-start;
+        justify-content: start;
+        gap: 1.5vw;
+        text-transform: capitalize;
+        margin-right: 2vw;
+    }
+
+}
+@media(max-width: 600px) {
+    .page1 {
+        background-color: #264d59;
+    }
+    .page1-left {
+        background-color: #264d59;
+    } 
+    #cycle-img{
+        width: 90vmin;
+    }
+
+    .page1-center{
+        top: 28%;
+        left: 50%;
+        color: #fff;
+    }
+    .white-div {
+        right: -39%;
+        width: 196vw;
+    }
+}
+@media(max-width: 400px) {
+    .page1 {
+        height: 90vh;
+    }
+    .page1-center{
+        top: 38%;
+        left: 50%;
+        color: #fff;
+    }
+}
